@@ -8,19 +8,23 @@
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
+    <script src="/scripts/service.js" charset="utf-8"></script>
   </head>
   <body ng-app="myApp">
     <div class="jumbotron">
       <h1>High Five Agent May</h1>
     </div>
-    <div ng-controller="HighFiveController as hfc" class="container col-lg-offset-1 col-lg-3 col-sm-offset-1 col-sm-3">
+    <div ng-controller="HighFiveController as hfc" ng-init="hfc.count()" class="container col-lg-offset-1 col-lg-3 col-sm-offset-1 col-sm-3">
       <h3>Meet Agent Melinda May:</h3>
       <p>She works for S.H.I.E.L.D.</p>
       <p>Some call her the Calvary.</p>
-      <p>Agent May holds security clearance level 7.</p>
+      <p>SHIELD security clearance level: 7.</p>
       <br>
-      <button type="button" id="highfive">High Five Agent May</button>
-      {{hfc.count}}
+      <button type="button" ng-click="hfc.checkQuality()">High Five Agent May</button>
+      <br>
+      <p>HighFive Success Counter: {{hfc.success}}</p>
+      <p>Agent May's Skill Level: {{hfc.agentQuality}}</p>
+      <p>Your Skill Level: {{hfc.userQuality}}</p>
     </div>
     <div class = "container col-lg-6 col-sm-6">
       <img src="https://static.comicvine.com/uploads/original/11119/111190794/4776550-9215809072-agent.jpg" alt="agent may">
