@@ -1,15 +1,8 @@
-body {
-  background-color: silver;
+body{
+  background-color: #8d5b5b;
 }
 
-img {
-  /*margin-top: 100px;*/
-  width: 650;
-  height: auto;
-  border: 5px black solid;
-}
-
-.jumbotron {
-  text-indent: 50px;
-  background-color: silver;
+.jumbotron{
+  background-color: #8d5b5b;
+  text-align: center;
 }

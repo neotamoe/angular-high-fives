@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Angular Routing Magic!</title>
     <link rel="stylesheet" href="/styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
@@ -12,22 +12,21 @@
   </head>
   <body ng-app="myApp">
     <div class="jumbotron">
-      <h1>High Five Agent May</h1>
+      <h1>High Fives All Around</h1>
     </div>
-    <div ng-controller="HighFiveController as hfc" ng-init="hfc.count()" class="container col-lg-offset-1 col-lg-3 col-sm-offset-1 col-sm-3">
-      <h3>Meet Agent Melinda May:</h3>
-      <p>She works for S.H.I.E.L.D.</p>
-      <p>Some call her the Calvary.</p>
-      <p>SHIELD security clearance level: 7.</p>
-      <br>
-      <button type="button" ng-click="hfc.checkQuality()">High Five Agent May</button>
-      <br>
-      <p>HighFive Success Counter: {{hfc.success}}</p>
-      <p>Agent May's Skill Level: {{hfc.agentQuality}}</p>
-      <p>Your Skill Level: {{hfc.userQuality}}</p>
-    </div>
-    <div class = "container col-lg-6 col-sm-6">
-      <img src="https://static.comicvine.com/uploads/original/11119/111190794/4776550-9215809072-agent.jpg" alt="agent may">
+    <div ng-controller="nyotaUhura as nu" class="container">
+      <img class="col-sm-6" src="https://s-media-cache-ak0.pinimg.com/originals/3c/f4/ce/3cf4cea6fba721b1e8fb8c0f2aa909a7.jpg" alt="nyota uhura">
+      <div class="col-sm-5">
+        <h1>Meet Nyota Uhura</h1>
+        <p>expert in xenolinguistics</p>
+        <p>serves on USS Enterprise</p>
+        <br>
+        <p>Your #: {{nu.yourNumber}}</p>
+        <p>Nyota's #: {{nu.startNumber}}</p>
+        <p>High Five Wins: {{nu.counter}}</p>
+        <br>
+        <button type="button" ng-click="nu.clickFive()">Give Her Five!</button>
+      </div>
     </div>
   </body>
 </html>
