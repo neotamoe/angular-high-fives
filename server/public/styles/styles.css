@@ -1,15 +1,49 @@
 body {
-  background-color: silver;
+  background-color: azure;
 }
 
 img {
-  /*margin-top: 100px;*/
-  width: 650;
-  height: auto;
   border: 5px black solid;
+  width: 600px;
+  height: auto;
 }
+
 
 .jumbotron {
   text-indent: 50px;
   background-color: silver;
+}
+
+footer{
+  background-color: silver;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: silver;
+}
+
+li{
+  float: left;
+  width: 20%;
+  border-right: 1px solid black;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: azure;
+}
+
+li:last-child {
+  border-right: none;
 }

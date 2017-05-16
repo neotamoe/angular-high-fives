@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>High Five Directory Fury</h1>
+</div>
+<div ng-controller="directoryFury as df" ng-init="df.count()" class="container col-lg-offset-1 col-lg-3 col-sm-4">
+  <h3>Meet Directory Nick Fury:</h3>
+  <p>He's at the top of S.H.I.E.L.D.</p>
+  <p>Some think he is dead.</p>
+  <p>SHIELD security clearance level: 10.</p>
+  <br>
+  <button type="button" ng-click="df.checkQuality()">High Five Director Fury</button>
+  <br>
+  <p>Director Fury's Skill Level: {{df.agentQuality}}</p>
+  <p>Your Skill Level: {{df.userQuality}}</p>
+</div>
+<div class = "container col-lg-6 col-sm-5">
+  <img src="http://vignette1.wikia.nocookie.net/agentsofshield/images/6/6c/Nick_Fury_%28Earth-199999%29_from_Captain_America_The_Winter_Soldier.jpg/revision/latest?cb=20140420033437" alt="director fury">
+</div>

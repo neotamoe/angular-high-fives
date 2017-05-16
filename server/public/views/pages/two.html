@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>High Five Agent Coulson</h1>
+</div>
+<div ng-controller=" as agentCoulson as ac" ng-init="ac.count()" class="container col-lg-offset-1 col-lg-3 col-sm-4">
+  <h3>Meet Agent Phil Coulson:</h3>
+  <p>He works for S.H.I.E.L.D.</p>
+  <p>Don't ask him about Tahiti.</p>
+  <p>SHIELD security clearance level: 8.</p>
+  <br>
+  <button type="button" ng-click="ac.checkQuality()">High Five Agent Coulson</button>
+  <br>
+  <p>Agent Coulson's Skill Level: {{ac.agentQuality}}</p>
+  <p>Your Skill Level: {{ac.userQuality}}</p>
+</div>
+<div class = "container col-lg-6 col-sm-5">
+  <img src="http://cdn1.sciencefiction.com/wp-content/uploads/2013/07/Agent-Coulson-1024x576.jpg" alt="agent coulson">
+</div>
