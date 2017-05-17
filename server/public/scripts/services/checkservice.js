@@ -1,7 +1,7 @@
 myApp.service('CheckFives', function(RandomNumber, CountSuccess){
   this.checkQuality = function(characterNumber){
     console.log('clicked high five button');
-    this.userQuality = RandomNumber.random(1,10);
+    this.userQuality = RandomNumber.random(1,11);
     console.log('userQuality:', this.userQuality);
     // vm.success=CountSuccess.getCount();
     if(this.userQuality >= characterNumber){

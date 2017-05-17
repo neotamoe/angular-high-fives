@@ -4,7 +4,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
     template: '<div><h1>Who do you want to high five?  Choose carefully.</h1></div>',
-    controller: 'homecontroller as hc'
+    controller: 'homeController as hc'
   }).when('/may', {
     templateUrl: '/views/pages/may.html',
     controller: 'agentMay as am'
