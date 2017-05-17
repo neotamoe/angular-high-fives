@@ -32,9 +32,8 @@
         </nav>
     <div ng-view class="container"></div>
       <div ng-controller="homeController as hc" class="container" id="footer">
-        <h3>Warning!  You must be approved by a S.H.I.E.L.D. agent to play this game.  </h3>
-        <h3>How are you doing?!</h3>
-        <p>HighFive Success Counter: {{hc.counter()}}</p>
+        <h4>Number of Total Successful High Fives: <span>{{hc.counter()}}</span></h4>
+        <h4><span>{{hc.warning}}</span>  You must be approved by a S.H.I.E.L.D. agent to play this game.  </h4>
       </div>
     </div>
   </body>
