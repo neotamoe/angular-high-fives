@@ -1,8 +1,8 @@
 myApp.controller('agentMay', ['RandomNumber', 'CheckFives', 'CountSuccess', function(RandomNumber, CheckFives, CountSuccess){
-  console.log('in agentMay');
+  console.log('in agentMay controller');
   var vm=this;
   // generate random number (skill level/quality of character on page load)
-  vm.agentQuality = RandomNumber.random(1,10);
+  vm.agentQuality = RandomNumber.random(1,11);
   console.log('vm.agentQuality:', vm.agentQuality);
   // vm.checkQuality = function(){
   //   console.log('clicked high five button');
